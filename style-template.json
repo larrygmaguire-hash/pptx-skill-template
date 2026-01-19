@@ -1,0 +1,146 @@
+{
+  "template_name": "[Your Template Name]",
+  "template_file": "[path/to/your-template.potx]",
+  "skill_name": "[your-presentation-skill]",
+
+  "layouts": {
+    "title": {
+      "index": 0,
+      "name": "[Layout Name in PowerPoint]",
+      "placeholders": [0, 1],
+      "placeholder_names": ["title", "subtitle"],
+      "use_for": "Opening slide",
+      "fixed_content": false
+    },
+    "section": {
+      "index": 1,
+      "name": "[Layout Name]",
+      "placeholders": [0, 1],
+      "placeholder_names": ["title", "subtitle"],
+      "use_for": "Section dividers",
+      "fixed_content": false
+    },
+    "content": {
+      "index": 2,
+      "name": "[Layout Name]",
+      "placeholders": [0, 1, 13],
+      "placeholder_names": ["title", "subtitle", "body"],
+      "use_for": "Body content with bullets — MOST COMMON",
+      "fixed_content": false
+    },
+    "quote": {
+      "index": 3,
+      "name": "[Layout Name]",
+      "placeholders": [0, 1],
+      "placeholder_names": ["quote_text", "attribution"],
+      "use_for": "Quotes or key statements",
+      "fixed_content": false
+    },
+    "about": {
+      "index": 4,
+      "name": "[Layout Name]",
+      "placeholders": [],
+      "placeholder_names": [],
+      "use_for": "Fixed about slide — no content added by script",
+      "fixed_content": true,
+      "has_template_animations": true
+    },
+    "cta": {
+      "index": 5,
+      "name": "[Layout Name]",
+      "placeholders": [],
+      "placeholder_names": [],
+      "use_for": "Call-to-action — no content added by script",
+      "fixed_content": true,
+      "has_template_animations": true
+    },
+    "thank_you": {
+      "index": 6,
+      "name": "[Layout Name]",
+      "placeholders": [0, 1],
+      "placeholder_names": ["title", "contact_info"],
+      "use_for": "Closing slide",
+      "fixed_content": false
+    }
+  },
+
+  "do_not_use_indices": [7, 8],
+  "do_not_use_reason": "Duplicates or reserved layouts",
+
+  "typography": {
+    "font_family": "[Your Font Name]",
+    "line_spacing": 1.2,
+    "title": {
+      "size_pt": 28,
+      "weight": "standard",
+      "case": "UPPER"
+    },
+    "subtitle": {
+      "size_pt": 24,
+      "weight": "bold",
+      "case": "Sentence"
+    },
+    "body": {
+      "size_pt": 22,
+      "weight": "standard"
+    },
+    "bullets": {
+      "size_pt": 22,
+      "weight": "standard",
+      "max_per_slide": 4,
+      "max_words_per_bullet": 12
+    },
+    "quote": {
+      "size_pt": 24,
+      "weight": "italic"
+    }
+  },
+
+  "colours": {
+    "accent_hex": "#000000",
+    "accent_rgb": [0, 0, 0],
+
+    "backgrounds": {
+      "dark": "Slides with dark backgrounds (list layout names)",
+      "light": "Slides with light/white backgrounds (list layout names)"
+    },
+
+    "text_by_background": {
+      "dark": "#FFFFFF",
+      "light": "#000000"
+    }
+  },
+
+  "bullets": {
+    "style": "arrow",
+    "font": "Wingdings",
+    "character": "\u00D8",
+    "pitch_family": "2",
+    "charset": "2",
+    "margin_emu": 342900,
+    "indent_emu": -342900
+  },
+
+  "animations": {
+    "effect": "dissolve",
+    "preset_id": 9,
+    "filter": "dissolve",
+    "duration_ms": 500,
+    "trigger": "on_click",
+    "build_paragraphs_for": ["subtitle", "body"],
+    "skip_for_fixed_slides": true
+  },
+
+  "content_guidelines": {
+    "subtitle_max_words": 10,
+    "intro_paragraph_sentences": "1-2",
+    "max_bullets": 4,
+    "max_words_per_bullet": 12,
+    "embrace_white_space": true
+  },
+
+  "output": {
+    "naming_convention": "DD-MM-YY-Presentation-Title.pptx",
+    "location": "ask_user"
+  }
+}
