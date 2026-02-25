@@ -1,0 +1,8 @@
+{
+  "name": "pptx-skill-template",
+  "version": "1.0.0",
+  "description": "PowerPoint presentation generation skill template",
+  "author": "Larry G. Maguire",
+  "license": "MIT",
+  "repository": "larrygmaguire/pptx-skill-template"
+}
